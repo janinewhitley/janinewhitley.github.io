@@ -222,18 +222,18 @@ h4 {
     flex-direction: row;
 }
 
-.certifcation {
+.certifcation, .experience {
 	display: flex;
 	flex-direction: column;
 }
 
-.work-resume {
+.certificate, .work-resume {
     display: flex;
     flex-direction: row;
 	padding-bottom: 3rem;
 }
 
-.experience p {
+.experiences p, .certifications p {
     width: 30vw;
 }
 
@@ -243,7 +243,7 @@ h4 {
     flex-direction: column;
 }
 
-.experience-description {
+.certificate-description, experience-description {
     padding-left: 3rem;
 }
 
@@ -445,16 +445,16 @@ footer {
         flex-direction: column;
     }
 
-    .work-resume {
+    .certificate, .work-resume {
         display: flex;
         flex-direction: column;
     }
 
-    .experience p {
+    .experiences, certifications, p {
         width: 65vw;
     }
 
-    .experience-description {
+    .certicate-description, experience-description {
         padding: 0;
     }
 
