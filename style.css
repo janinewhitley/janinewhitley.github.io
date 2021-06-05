@@ -225,7 +225,7 @@ h4 {
 
 .work-resume {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .work-resume div {
