@@ -223,14 +223,14 @@ h4 {
     flex-direction: row;
 }
 
-.work-resume {
-    display: flex;
-    flex-direction: column;
-}
-
-.work-resume div {
+.experience {
 	display: flex;
 	flex-direction: column;
+}
+
+.work-resume {
+    display: flex;
+    flex-direction: row;
 }
 
 .experience p {
