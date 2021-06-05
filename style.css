@@ -456,7 +456,7 @@ footer {
         flex-direction: column;
     }
 
-    .experiences p, certifications, p {
+    .experiences p, .certifications p {
         min-width: 65vw;
     }
 
