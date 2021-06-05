@@ -191,6 +191,7 @@ a {
 .about {
     width: 100%;
     height: 100%;
+	max-width: 100%;
 }
 
 .about article {
@@ -444,14 +445,19 @@ footer {
         display: flex;
         flex-direction: column;
     }
+	
+.about article {
+	padding-right: 3rem;
+	padding-left: 3rem;
+}
 
     .certificate, .work-resume {
         display: flex;
         flex-direction: column;
     }
 
-    .experiences, certifications, p {
-        width: 65vw;
+    .experiences p, certifications, p {
+        min-width: 65vw;
     }
 
     .certificate-description, experience-description {
