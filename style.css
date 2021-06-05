@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.loadscreen {
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b10;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: .25rem solid #4d4d4d;
+    border-top: .25rem solid #fff;
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+.loading {
+      position: absolute;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    
+    .loading:after {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+        -webkit-animation: ellipsis steps(4,end) 2s infinite;      
+        animation: ellipsis steps(4,end) 2s infinite;
+        content: "\2026"; /* ascii code for the ellipsis character */
+        width: 0;
+      }
+      
+      @keyframes ellipsis {
+        to {
+          width: .75rem;    
+        }
+      }
+      
+      @-webkit-keyframes ellipsis {
+        to {
+          width: .75rem;    
+        }
+      }
+  
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0B0B10;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    float: left;
+    transition: 0.2s ease;
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+}
+
+
+.menu a {
+    display: flex;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16161D;
+}
+
+.welcome-heading {
+    width: 5rem;
+    text-align: center;
+}
+
+.welcome-paragraph {
+    padding: 1rem;
+    text-align: left;
+    max-width: 16rem;
+    font-size: 1.125rem;
+}
+
+.down-arrow {
+    position: absolute;
+    z-index: 0;
+    top: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.project {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-name {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16161D;
+    color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.project-name-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.project-description {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.project-description-text {
+    color: white;
+    padding: 3rem;
+    background: none;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.about article {
+    display: flex;
+    z-index: -1;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    color:#16161de0;
+}
+
+h4 {
+    color: #797979;
+}
+
+.credentials {
+    padding-top: 10rem;
+}
+
+.title {
+    width: 25vw;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-resume {
+    display: flex;
+    flex-direction: row;
+}
+
+.experience p {
+    width: 30vw;
+}
+
+.resume-skills {
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-description {
+    padding-left: 3rem;
+}
+
+.school {
+    padding-bottom: 3rem;
+}
+
+.contact {
+    width: 100%;
+    height: 94vh;
+    color: white;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+#contact-form p {
+    margin: 1.25rem;
+}
+
+textarea {
+    width: 25vw;
+    height: 10rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: .8125rem;
+    margin-bottom: 1.25rem;
+}
+
+#submit {
+    width: 5rem;
+    height: 2rem;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: 0.2s ease;
+}
+
+#submit:hover {
+    color: darkslategray;
+    background-color: white;
+    cursor: pointer;
+}
+
+#name {
+    width: 16rem;
+    height: 1rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+}
+
+#email {
+    width: 16rem;
+    height: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-link {
+    padding: 0 1rem;
+}
+
+.social-link:hover {
+    opacity: 0.7;
+}
+
+.burger {
+	display: none;
+}
+
+.burger-menu {
+	display: none;
+}
+
+.burger-toggle {
+	display: none;
+}
+
+.contact h1 {
+    margin: 3.5rem;
+}
+
+footer {
+    background-color: #16161D;
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    nav {
+        display: none;
+    }
+
+    .menu {
+        align-items: center;
+        top: 60px;
+        width: 100vw;
+        height: 50vh;
+        left: 0;
+        position: absolute;
+        z-index: 10;
+        background-color: #16161d;
+    }
+
+    .menu li:hover {
+        border: none;
+    }
+
+    .menu a:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .burger {
+		width: 60px;
+		height: 60px;
+		display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+		background: none;
+		border: none;
+        top: 0;
+		right: 0;
+		position: absolute;
+		cursor: pointer;
+	}
+	
+	.burger span {
+		content: "";
+		background-color: white;
+		width: 2rem;
+		height: .25rem;
+		margin: .25rem;
+		transition: .1s ease;
+        border-radius: .125rem;
+	}
+
+	#burger-toggle:checked ~ .burger span:nth-child(1) {
+		transform: translateY(.75rem) rotate(45deg);
+	}
+
+	#burger-toggle:checked ~ .burger span:nth-child(2) {
+		visibility: hidden;
+	}
+
+	#burger-toggle:checked ~ .burger span:nth-child(3) {
+		transform: translateY(-.75rem) rotate(-45deg);
+	}
+
+	#burger-toggle:checked ~ nav {
+        width: fit-content;
+		display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+	}
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-paragraph {
+        font-size: 1rem;
+    }
+
+    .about {
+        height: auto;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-resume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience p {
+        width: 65vw;
+    }
+
+    .experience-description {
+        padding: 0;
+    }
+
+    .resume-skills {
+        padding-right: 3rem;
+    }
+
+    .title {
+        width: 75vw;
+        padding-bottom: 3rem;
+    }
+    
+    textarea {
+        width: 50vw;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-name {
+        width: 100%;
+        height: 50vh
+    }
+
+    .project-description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .resume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-skills {
+        padding: 1rem 0;
+    }
+}
