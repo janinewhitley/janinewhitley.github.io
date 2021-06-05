@@ -225,12 +225,12 @@ h4 {
 
 .work-resume {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .work-resume div {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .experience p {
