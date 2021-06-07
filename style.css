@@ -465,7 +465,7 @@ footer {
     }
 
     .resume-skills {
-        padding-right: 3rem;
+        padding-right: 2rem;
     }
 
     .title {
@@ -501,6 +501,5 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		font-size: .875rem;
 }
 }
