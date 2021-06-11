@@ -244,7 +244,7 @@ h4 {
     flex-direction: column;
 }
 
-.certificate-description, experience-description {
+.certificate-description, .experience-description {
     padding-left: 3rem;
 }
 
@@ -460,7 +460,7 @@ footer {
         min-width: 65vw;
     }
 
-    .certificate-description, experience-description {
+    .certificate-description, .experience-description {
         padding: 0;
     }
 
