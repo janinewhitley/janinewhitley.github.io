@@ -19,7 +19,7 @@
       <p class="loading">Compiling</p>
     </div>
     <header class="header" id="header">
-      <input type="checkbox" class="burger-toggle" id="burger-toggle">
+      <input type="checkbox" class="burger-toggle" id="burger-toggle" aria-hidden="true">
     <label for="burger-toggle" class="burger" id="burger-toggle">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -30,14 +30,14 @@
       </div>
       <nav class="nav" id="nav">
         <ul class="menu" id="menu">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#work" id="link">Work</a></li>
+          <li><a href="#about" id="link">About</a></li>
+          <li><a href="#contact" id="link">Contact</a></li>
         </ul>
       </nav>
     </input>
     </header>
-    <section class="welcome" id="welcome" onhashchange="location.reload();">
+    <section class="welcome" id="welcome">
       <div class="welcome-heading"><h1>Hey There,</h1></div>
       <div class="welcome-paragraph">
         <p>The name's Janine.<br> I'm a visual web designer.<br> Here's some of my work.</p>
@@ -48,7 +48,7 @@
         </a>
       </div>
     </section>
-    <section class="work" id="work" onhashchange="location.reload();">
+    <section class="work" id="work">
         <div class="project-name" id="project-name">
           <h2 class="project-name-text">My Work</h2>
         </div>
@@ -101,7 +101,7 @@
       </div>
       </section>
     </div>
-    <section class="about" id="about" onhashchange="location.reload();">
+    <section class="about" id="about">
       <article class="credentials">
         <div class="title">
           <h2>Janine Whitley</h2>
@@ -126,7 +126,7 @@
           <p>March 2020 - August 2020</p>
         </div>
         <div class="experience-description">
-            <p>Provide customer service when required by ensuring that the customer is acknowledged; identifying customer needs, helping customers with purchasing decisions, locating merchandise, resolving customer issues, unload trucks, sort products in the backroom, stock products on shelves, ensure aisles are neat and area is clean, engage vendors and drivers with a positive attitude, and maintaining a safe shopping environment.</p>
+            <p>Provide customer service when required by ensuring that the customer is acknowledged, identifying customer needs, helping customers with purchasing decisions, locating merchandise, and resolving customer issues. Other responsibilities included unloading trucks, sorting products in the backroom, stocking products on shelves, ensuring aisles are neat and area is clean, engaging vendors and drivers with a positive attitude, and maintaining a safe shopping environment.</p>
         </div>
       </div>
         </div>
@@ -206,7 +206,7 @@
           </div>
       </article>
     </section>
-    <section class="contact" id="contact" onhashchange="location.reload();">
+    <section class="contact" id="contact">
       <h1>Let's Connect.</h1>
       <form id="contact-form" action="https://getform.io/f/8681ee4a-e874-42fc-93d4-94045a847b16" method="post" enctype="multipart/form-data">
         <label id="nameLabel" for="name"><p>What's Your Name?</p>
