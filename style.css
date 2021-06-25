@@ -364,6 +364,18 @@ footer {
     nav {
         display: none;
     }
+	
+	@keyframes rotateMenu {
+        0% {
+            transform: rotateX(-90deg)
+        }
+        70% {
+            transform: rotateX(20deg) 
+        }
+        100% {
+            transform: rotateX(0deg) 
+        }
+    }
 
     .menu {
         align-items: center;
@@ -376,18 +388,6 @@ footer {
         background-color: #16161d;
 	animation: rotateMenu 1s ease-in-out forwards;
 	transform-origin: top center;
-    }
-	
-	    @keyframes rotateMenu {
-        0% {
-            transform: rotateX(-90deg)
-        }
-        70% {
-            transform: rotateX(20deg) 
-        }
-        100% {
-            transform: rotateX(0deg) 
-        }
     }
 
 
