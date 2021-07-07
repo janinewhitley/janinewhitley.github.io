@@ -483,7 +483,7 @@ footer {
         padding: 0;
     }
 .certificate div {
-    max-width: 75vw;
+    width: 75vw;
 }
 
     .resume-skills {
