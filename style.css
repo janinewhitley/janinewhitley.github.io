@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    scroll-snap-type: y-mandatory;
+}
+
 .loadscreen {
     width: 100%;
     height: 100%;
@@ -182,6 +186,7 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
+    scroll-snap-align: start;
 }
 
 .project-description-text {
