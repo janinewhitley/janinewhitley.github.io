@@ -145,16 +145,18 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: fit-content;
 }
 
 .project {
     width: 50%;
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .project-name {
-    height: 100vh;
+    height: 100vh !important;
     width: 50%;
     display: flex;
     justify-content: center;
