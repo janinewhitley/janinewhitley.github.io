@@ -469,7 +469,8 @@ footer {
     }
 
     .about {
-        height: auto;
+        height: 100vh;
+	overflow-y: scroll;
     }
     article {
         display: flex;
