@@ -6,6 +6,7 @@
     vertical-align: middle;
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
