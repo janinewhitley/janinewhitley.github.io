@@ -7,11 +7,7 @@
     vertical-align: middle;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-body {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .loadscreen {
