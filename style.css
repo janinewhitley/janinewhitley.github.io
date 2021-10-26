@@ -7,7 +7,6 @@
     vertical-align: middle;
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
 }
 
 .loadscreen {
@@ -68,6 +67,10 @@
           width: .75rem;    
         }
       }
+
+main {
+	scroll-snap-type: y mandatory;
+}
   
 .header {
     width: 100%;
@@ -149,7 +152,7 @@ a {
     flex-direction: row;
     width: 100%;
     height: fit-content;
-    scroll-snap-align: start;
+	scroll-snap-type: y mandatory;
 }
 
 .project {
