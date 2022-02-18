@@ -213,11 +213,11 @@ a {
     margin-bottom: 3rem;
 }
 
-h3 {
+h4 {
     color:#16161de0;
 }
 
-h4 {
+h5 {
     color: #797979;
 }
 
@@ -360,7 +360,7 @@ textarea {
 	display: none;
 }
 
-.contact h1 {
+.contact h2 {
     margin: 3.5rem;
 }
 
