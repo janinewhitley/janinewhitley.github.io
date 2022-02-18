@@ -291,7 +291,7 @@ h5 {
     color: white;
 }
 
-#contact-form p, #contact-form label {
+#contact-form input, textarea {
     margin: 1.25rem;
 }
 
