@@ -2,7 +2,7 @@ const loader = () => {document.getElementById('loadscreen').style.display = 'non
 const closeHamburger = () => {document.getElementById('burger-toggle').checked = false;}
 
 var i = 0;
-var txt = "The name's Janine. Full-stack web developer. Here's some of my work.";
+var txt = "The name's Janine. Full-stack developer. Here's some of my work.";
 var speed = 50;
 
 function typeWriter() {
