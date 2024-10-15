@@ -8,8 +8,9 @@
     <meta name="author" content="Janine Whitley">
     <meta name="description" content="Janine Whitley's design portfolio">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/f336273bb1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="script.js" defer></script>
   </head>
@@ -39,9 +40,11 @@
     </header>
 	<main>
     <section class="welcome" id="welcome">
-      <div class="welcome-heading"><h1>Hey There,</h1></div>
-      <div class="welcome-paragraph">
-        <p id="demo"></p>
+        <div class="text" id="text">
+            <p class="shadow">Hey There,</p>
+            <p class="shadow">The Name's Janine.</p>
+            <p class="shadow">I'm into <span id="element"></span></p>
+        </div>
       </div>
       <div class="down-arrow">
         <a href="#work">
