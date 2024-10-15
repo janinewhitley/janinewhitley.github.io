@@ -1,16 +1,31 @@
 const loader = () => {document.getElementById('loadscreen').style.display = 'none';}
 const closeHamburger = () => {document.getElementById('burger-toggle').checked = false;}
 
-var i = 0;
-var txt = "The name's Janine. Full-stack developer. Here's some of my work.";
-var speed = 50;
+var typed = new Typed('#element', {
+    strings: [
+        'UI/UX Design.', 
+        'Software Engineering.', 
+        'AI/Machine Learning.', 
+        'Blockchain/Web3.', 
+        '3D Modeling.',
+        'Music Production.', 
+        'Video Editing.', 
+        'Film Photography.', 
+        'DeFi/Crypto.', 
+        'Kayaking/Sailing.', 
+        'Sim Racing.'
+    ],
+    typeSpeed: 50,
+  });
+  
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+  var text = document.getElementById('text');
+  var writing = document.getElementsByClassName('shadow');
+
+  for (var i = 0; i < writing.length; i++) {
+
+    writing[i].addEventListener("input", function() {
+      this.setAttribute("data-text", this.innerText);
+    });
+
   }
-}
-
-window.addEventListener('load', typeWriter);
