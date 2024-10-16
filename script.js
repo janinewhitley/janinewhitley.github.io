@@ -16,6 +16,7 @@ var typed = new Typed('#element', {
         'Sim Racing.'
     ],
     typeSpeed: 50,
+    loop: true
   });
   
 
