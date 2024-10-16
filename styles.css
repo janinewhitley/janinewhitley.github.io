@@ -556,5 +556,9 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-}
+	}
+
+	.shadow {
+		font-size: 2rem;
+	}
 }
