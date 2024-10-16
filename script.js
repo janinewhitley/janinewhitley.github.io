@@ -1,8 +1,8 @@
 const loader = () => {document.getElementById('loadscreen').style.display = 'none';}
 const closeHamburger = () => {document.getElementById('burger-toggle').checked = false;}
 
-var typed = new Typed('#element', {
-    strings: [
+ var options = {
+          strings: [
         'UI/UX Design.', 
         'Software Engineering.', 
         'AI/Machine Learning.', 
@@ -15,9 +15,28 @@ var typed = new Typed('#element', {
         'Kayaking/Sailing.', 
         'Sim Racing.'
     ],
-    typeSpeed: 50,
-    loop: true
-  });
+      typeSpeed: 40,
+      loop: true
+    }
+var typed = new Typed("#element", options);
+
+// var typed = new Typed('#element', {
+//     strings: [
+//         'UI/UX Design.', 
+//         'Software Engineering.', 
+//         'AI/Machine Learning.', 
+//         'Blockchain/Web3.', 
+//         '3D Modeling.',
+//         'Music Production.', 
+//         'Video Editing.', 
+//         'Film Photography.', 
+//         'DeFi/Crypto.', 
+//         'Kayaking/Sailing.', 
+//         'Sim Racing.'
+//     ],
+//     typeSpeed: 50,
+//     loop: true
+//   });
   
 
   var text = document.getElementById('text');
