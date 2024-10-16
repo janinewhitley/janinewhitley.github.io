@@ -22,6 +22,7 @@
     color: #fff;
     font-weight: 700;
     font-size: 4rem;
+	transform: rotate3d(2, 2, 2, -18deg);
     text-shadow: #fff 0 0 1px, 
     #eee 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px, 
     rgba(0,0,0,0.2) 0 14px 3px, rgba(0,0,0,0.1) 0 20px 10px,
