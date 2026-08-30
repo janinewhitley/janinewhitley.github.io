@@ -4,16 +4,10 @@ const closeHamburger = () => {document.getElementById('burger-toggle').checked =
  var options = {
           strings: [
         'UI/UX Design.', 
-        'Software Engineering.', 
-        'AI/Machine Learning.', 
-        'Blockchain/Web3.', 
-        '3D Modeling.',
-        'Music Production.', 
-        'Video Editing.', 
-        'Film Photography.', 
-        'DeFi/Crypto.', 
-        'Kayaking/Sailing.', 
-        'Sim Racing.'
+        'Computer Science.', 
+        'Network Engineering.', 
+        'Cloud Architecture.', 
+        'Cybersecurity.',
     ],
       typeSpeed: 40,
       loop: true
