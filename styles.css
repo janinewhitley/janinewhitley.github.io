@@ -170,6 +170,71 @@ a {
     justify-content: center;
 }
 
+.case-study-body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.case-study-header {
+    padding: 0 16rem;
+    width: 25%;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    background-color: #000;
+    color: #fff;
+}
+
+.case-study-header h1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 75%;
+    text-align: center;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: #fff;
+}
+
+.case-study {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.case-study h2 {
+    padding: 1rem;
+}
+
+.case-study img {
+    width: 48rem; 
+    height: 24rem; 
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 3rem 0;
+}
+
+.case-study-description {
+    padding: 1rem 0;
+}
+
 .work {
     display: flex;
     flex-direction: row;
@@ -191,7 +256,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #16161D;
+    background-color: #000;
     color: white;
     position: sticky;
     position: -webkit-sticky;
@@ -211,15 +276,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     scroll-snap-align: start;
 }
 
+.project-description a {
+    color: black;
+    font-weight: 500;
+}
+
 .project-description-text {
-    color: white;
     padding: 3rem;
     background: none;
 }
+
 
 .about {
     width: 100%;
@@ -282,7 +351,7 @@ h5 {
     padding-left: 3rem;
 }
 
-.certificate div {
+.certificate div, .work-resume div {
     width: 25vw;
 }
 
@@ -534,21 +603,30 @@ footer {
         width: 16rem;
     }
 
-    .work {
+    .work, .case-study-body {
         display: flex;
         flex-direction: column;
     }
 
-    .project {
+    .project, .case-studies {
         width: 100%;
     }
 
-    .project-name {
+    .project-name, .case-study-header {
         width: 100%;
         height: 50vh
     }
 
-    .project-description {
+    .case-study-header {
+        padding: 0;
+    }
+
+    .case-study img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .project-description, .case-study-description {
         width: 100%;
     }
 }
@@ -562,10 +640,10 @@ footer {
 
 	.shadow {
 		font-size: 2rem;
-		text-shadow: #fff 0 0 1px, 
-		#eee 0 2px 1px, 
-		#ddd 0 5px 1px,  
-		#ccc 0 6px 1px, 
+		text-shadow: #ddd 0 0 1px, 
+		#ccc 0 2px 1px, 
+		#bbb 0 5px 1px,  
+		#aaa 0 6px 1px, 
 		rgba(0,0,0,0.2) 0 10px 3px, 
 		rgba(0,0,0,0.1) 0 12px 5px,
 		rgba(0,0,100,0.2) 0 9px 20px
