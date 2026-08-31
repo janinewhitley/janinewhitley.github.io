@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Janine Whitley</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="janine whitley, janine, web developer, web designer, ux design, ui design, ux portfolio, web portfolio, creative director, product designer, project manager">
-    <meta name="author" content="Janine Whitley">
-    <meta name="description" content="Janine Whitley's design portfolio">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/f336273bb1.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script src="script.js" defer></script>
-  </head>
 
-  <body onload="loader();">
-    <div class="loadscreen" id="loadscreen">
-      <div class="loader" id="loader"></div>
-      <p class="loading">Compiling</p>
-    </div>
-    <header class="header" id="header">
-      <input type="checkbox" class="burger-toggle" id="burger-toggle" aria-hidden="true">
+<head>
+  <title>Janine Whitley</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords"
+    content="janine whitley, janine, web developer, web designer, ux design, ui design, ux portfolio, web portfolio, creative director, product designer, project manager">
+  <meta name="author" content="Janine Whitley">
+  <meta name="description" content="Janine Whitley's design portfolio">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/f336273bb1.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body onload="loader();">
+  <div class="loadscreen" id="loadscreen">
+    <div class="loader" id="loader"></div>
+    <p class="loading">Compiling</p>
+  </div>
+  <header class="header" id="header">
+    <input type="checkbox" class="burger-toggle" id="burger-toggle" aria-hidden="true">
     <label for="burger-toggle" class="burger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </label>
-      <div class="logo" id="logo">
-        <a href="#"><img src="logo.png" alt="logo" style="height: 45px"></a>
-      </div>
-      <nav class="nav" id="nav">
-        <ul class="menu" id="menu">
-          <li><a href="#work" class="link" onclick="closeHamburger()">Work</a></li>
-          <li><a href="#about" class="link" onclick="closeHamburger()">About</a></li>
-          <li><a href="#contact" class="link" onclick="closeHamburger()">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-	<main>
+    <div class="logo" id="logo">
+      <a href="#"><img src="logo.png" alt="logo" style="height: 45px"></a>
+    </div>
+    <nav class="nav" id="nav">
+      <ul class="menu" id="menu">
+        <li><a href="#work" class="link" onclick="closeHamburger()">Work</a></li>
+        <li><a href="#about" class="link" onclick="closeHamburger()">About</a></li>
+        <li><a href="#contact" class="link" onclick="closeHamburger()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <section class="welcome" id="welcome">
-        <div class="text" id="text">
-            <p class="shadow">Hey There,</p>
-            <p class="shadow">The Name's Janine.</p>
-            <p class="shadow">I've studied <span id="element"></span></p>
-        </div>
+      <div class="text" id="text">
+        <p class="shadow">Hey There,</p>
+        <p class="shadow">The Name's Janine.</p>
+        <p class="shadow">I've studied <span id="element"></span></p>
+      </div>
       </div>
       <div class="down-arrow">
         <a href="#work">
@@ -53,23 +55,25 @@
       </div>
     </section>
     <section class="work" id="work">
-        <div class="project-name" id="project-name">
-          <h2 class="project-name-text">My Work</h2>
-        </div>
-        <div class="project">
-          <article class="project-description">
+      <div class="project-name" id="project-name">
+        <h2 class="project-name-text">My Work</h2>
+      </div>
+      <div class="project">
+        <article class="project-description">
           <h3>Yard Move Exception Workflow</h3>
           <p class="project-description-text">
-            A process improvement design created in Figma, targeted at keeping physical and virtual yard state aligned when assigned parking slips are unexpectedly occupied.
+            A process improvement design created in Figma, targeted at keeping physical and virtual yard state aligned
+            when assigned parking slips are unexpectedly occupied.
             <br>
             <br>
             <a href="yard-move-exception-case-study.html" target="_blank">View Case Study ></a>
           </p>
-	</article>
-	<article class="project-description">
+        </article>
+        <article class="project-description">
           <h3>Driver Messaging Interface Refresh</h3>
           <p class="project-description-text">
-            Mobile interface design refresh to reduce friction in async communication between drivers and operations by improving readability and establishing clearer visual hierarchy.
+            Mobile interface design refresh to reduce friction in async communication between drivers and operations by
+            improving readability and establishing clearer visual hierarchy.
             <br>
             <br>
             <a href="driver-message-interface-case-study.html" target="_blank">View Case Study ></a>
@@ -78,7 +82,9 @@
         <article class="project-description">
           <h3>Serverless Dispatch/Resource Allocation System</h3>
           <p class="project-description-text">
-            A serverless logistics simulation (an interface for managing high-volume, time-sensitive tasks) with event-driven resource assignment and real-time client updates, built using AWS architecture such as Lambda, API Gateway, DynamoDB, EventBridge, and Infrastructure as Code.
+            A serverless logistics simulation (an interface for managing high-volume, time-sensitive tasks) with
+            event-driven resource assignment and real-time client updates, built using React and AWS architecture such as Lambda,
+            API Gateway, DynamoDB, EventBridge, and Infrastructure as Code.
             <br>
             <br>
             <a class="loading" target="_blank">In The Works</a>
@@ -87,13 +93,15 @@
         <article class="project-description">
           <h3>DOT-Clock Parking Router</h3>
           <p class="project-description-text">
-            A routing system that continuously determines whether the driver can legally anmd realistically reach their destination before their available driving time runs out, and if not, identifies the best feasible parking location along the route.
+            A routing system that continuously determines whether the driver can legally and realistically reach their
+            destination before their available driving time runs out, and if not, identifies the best feasible parking
+            location along the route.
             <br>
             <br>
             <a class="loading" target="_blank">In The Works</a>
           </p>
         </article>
-	<!-- <article class="project-description" style="background: linear-gradient(-45deg, #9a00ff, #00ff90);">
+        <!-- <article class="project-description" style="background: linear-gradient(-45deg, #9a00ff, #00ff90);">
           <h3>Uncancelled</h3>
           <p class="project-description-text">
             This project is a decentralized crowdfunding app designed to revive your favorite canceled Netflix shows, compatible with all devices (mobile, laptop, and even your TV) on the Ethereum blockchain, built using React Native and Solidity, and deployed via Git and AWS.
@@ -111,7 +119,7 @@
             <a href="https://www.figma.com/proto/4PoyXnLpV52XerM8kJFJZn/Paris-Agreement?node-id=20-7&t=5qYdaDui1b1WKLQR-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank">View Case Study ></a>
           </p>
         </article> -->
-<!-- 	<article class="project-description" style="background: black;">
+        <!-- 	<article class="project-description" style="background: black;">
           <h3>uMannequin</h3>
           <p class="project-description-text">
             This project is an augmented reality app that creates a 3D avatar of the user to help them visualize how a product will look on them when shopping online.
@@ -129,7 +137,7 @@
             <a class="loading">In Progress</a>
           </p>
         </article> -->
-	<!-- <article class="project-description" style="background: black;">
+        <!-- <article class="project-description" style="background: black;">
           <h3>Haiku</h3>
           <p class="project-description-text">
             Founded and built a social media platform that utilizes HTML, CSS, JavaScript, PHP, MySQL, and CRUD to allow users to share haiku poems anonymously, deployed using Heroku and Git.
@@ -139,7 +147,7 @@
           </p>
         </article> -->
       </div>
-      </section>
+    </section>
     <section class="about" id="about">
       <article class="credentials">
         <div class="title">
@@ -158,87 +166,110 @@
           <h3>Relevant Experience</h3>
         </div>
         <div class="experience">
-        <div class="work-resume">
-        <div>
-          <h4>Truck Driver</h4>
-          <h5>Amazon</h5>
-        </div>
-        <div class="experience-description">
-            <p>Perform various functions within the yard, support site operations teams, internal transportation field teams, and external carriers, as needed, to ensure all trailers arrive and depart on time with zero defects and to maintain workflow for buildings. Be professionally trained to operate Commercial Motor Vehicles (CMVs) on non-public roads or in yard to move trailers to/from dock and parking locations. Learn Department of Transportation (DOT) regulations and comply with company policies, procedures of those DOT regulations (size, weight, route designations, parking, trailer designations, violation and incident reporting requirements, break periods, etc.). Complete driver vehicle inspection reports on equipment and notify managers of any maintenance or delivery issues encountered.</p>
-        </div>
-        </div>
-        <div class="work-resume">
-
-          <div>
-            <h4>Front-End Developer/UX Designer (Intern)</h4>
-            <h5>Volvo Trucks</h5>
+          <div class="work-resume">
+            <div>
+              <h4>Truck Driver</h4>
+              <h5>Amazon</h5>
+            </div>
+            <div class="experience-description">
+              <p>Perform various functions within the yard, support site operations teams, internal transportation field
+                teams, and external carriers, as needed, to ensure all trailers arrive and depart on time with zero
+                defects and to maintain workflow for buildings. Be professionally trained to operate Commercial Motor
+                Vehicles (CMVs) on non-public roads or in yard to move trailers to/from dock and parking locations.
+                Learn Department of Transportation (DOT) regulations and comply with company policies, procedures of
+                those DOT regulations (size, weight, route designations, parking, trailer designations, violation and
+                incident reporting requirements, break periods, etc.). Complete driver vehicle inspection reports on
+                equipment and notify managers of any maintenance or delivery issues encountered.</p>
+            </div>
           </div>
-          <div class="experience-description">
-            <p>Access HMI/UX data from the different systems used, communicate technical data between Group Design/Electrical Interface, support and assist in the development and construction of 3D UX digital models, and support studio work by designing and prototyping various digital proposals and wireframes to be used as mock-ups.</p>
+          <div class="work-resume">
+            <div>
+              <h4>Front-End Developer/UX Designer (Intern)</h4>
+              <h5>Volvo Trucks</h5>
+            </div>
+            <div class="experience-description">
+              <p>Access HMI/UX data from the different systems used, communicate technical data between Group
+                Design/Electrical Interface, support and assist in the development and construction of 3D UX digital
+                models, and support studio work by designing and prototyping various digital proposals and wireframes to
+                be used as mock-ups.</p>
+            </div>
           </div>
         </div>
         </div>
-      </div>
       </article>
       <article class="education">
         <div class="title">
           <h3>Education</h3>
         </div>
-        <div>
         <div class="school">
+          <div>
             <h4>Western Governors University</h4>
             <h5>Bachelor of Science in Cloud and Network Engineering</h5>
+          </div>
+          <div class="experience-description">
+            <p>This degree prepares you for today’s hybrid infrastructure environments, where cloud systems,
+              on-premise networks, and AI-driven automation work together to power the modern workplace.</p>
+          </div>
         </div>
-      </div>
       </article>
-            <article class="certifications">
+      <article class="certifications">
         <div class="title">
           <h3>Certifications</h3>
         </div>
         <div class="certification">
-        <div class="certificate">
-        <div>
-          <h4>Trifecta (A+, Net+, Sec+)</h4>
-          <h5>CompTIA</h5>
-        </div>
-        <div class="certificate-description">
-            <p>CompTIA A+ covers computer hardware, software, operating systems, and basic troubleshooting. CompTIA Network+ focuses on network design, connections, protocols, and hardware like routers and switches. CompTIA Security+ teaches core cybersecurity concepts, risk management, and threat analysis. Altogether, they make up the CompTIA Secure Infrastructure Specialist credential, demonstrating these individuals have the knowledge and skill required to support hardware and software systems and to protect an organization’s assets from internal and external threats.</p>
-        </div>
-        </div>
-      <div class="certificate">
-      <div>
-        <h4>IT Support Professional</h4>
-        <h5>Google</h5>
-      </div>
-        <div class="certificate-description">
-        <p>Learn to perform day-to-day IT support tasks including computer assembly, wireless networking, installing programs, customer service, how to provide end-to-end customer support (ranging from identifying problems to troubleshooting and debugging), and how to use systems (including Linux, Domain Name Systems, and the Command-Line Interface) and Binary Code.</p>
-        </div>
-     </div>
-<div>
-<div class="certificate">
-        <div>
-        <h4>Product Design</h4>
-        <h5>Udacity</h5>
-      </div>
-        
-      <div class="certificate-description">
-        <p>This course covers essential topics like product validation, UI/UX design, and Google’s Design Sprint. You’ll gain experience creating impactful mockups, refining ideas for product/market fit, and tracking key metrics to boost user engagement.</p>
-        </div>
-</div>
-     </div>
+          <div class="certificate">
+            <div>
+              <h4>Trifecta (A+, Net+, Sec+)</h4>
+              <h5>CompTIA</h5>
+            </div>
+            <div class="certificate-description">
+              <p>CompTIA A+ covers computer hardware, software, operating systems, and basic troubleshooting. CompTIA
+                Network+ focuses on network design, connections, protocols, and hardware like routers and switches.
+                CompTIA Security+ teaches core cybersecurity concepts, risk management, and threat analysis. Altogether,
+                they make up the CompTIA Secure Infrastructure Specialist credential, demonstrating these individuals
+                have the knowledge and skill required to support hardware and software systems and to protect an
+                organization’s assets from internal and external threats.</p>
+            </div>
+          </div>
+          <div class="certificate">
+            <div>
+              <h4>IT Support Professional</h4>
+              <h5>Google</h5>
+            </div>
+            <div class="certificate-description">
+              <p>Learn to perform day-to-day IT support tasks including computer assembly, wireless networking,
+                installing programs, customer service, how to provide end-to-end customer support (ranging from
+                identifying problems to troubleshooting and debugging), and how to use systems (including Linux, Domain
+                Name Systems, and the Command-Line Interface) and Binary Code.</p>
+            </div>
+          </div>
+          <div>
+            <div class="certificate">
+              <div>
+                <h4>Product Design</h4>
+                <h5>Udacity</h5>
+              </div>
+
+              <div class="certificate-description">
+                <p>This course covers essential topics like product validation, UI/UX design, and Google’s Design
+                  Sprint. You’ll gain experience creating impactful mockups, refining ideas for product/market fit, and
+                  tracking key metrics to boost user engagement.</p>
+              </div>
+            </div>
+          </div>
       </article>
       <article class="skills">
         <div class="title">
           <h3>Skills</h3>
         </div>
         <div class="resume">
-        <div class="resume-skills">
-          <p>Adobe CC</p>
-          <p>Figma</p>
-          <p>HTML</p>
-          <p>CSS</p>
-        </div>
-        <div class="resume-skills">
+          <div class="resume-skills">
+            <p>Adobe CC</p>
+            <p>Figma</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="resume-skills">
             <p>TypeScript</p>
             <p>React (Native)</p>
             <p>MySQL</p>
@@ -250,29 +281,32 @@
             <p>Wireshark</p>
             <p></p>
           </div>
-          </div>
+        </div>
       </article>
     </section>
     <section class="contact" id="contact">
       <h2>Let's Connect.</h2>
-      <form id="contact-form" action="https://getform.io/f/8681ee4a-e874-42fc-93d4-94045a847b16" method="post" enctype="multipart/form-data">
+      <form id="contact-form" action="https://getform.io/f/8681ee4a-e874-42fc-93d4-94045a847b16" method="post"
+        enctype="multipart/form-data">
         <label id="nameLabel" for="name">What's Your Name?<br>
           <input name="name" id="name" type="text" placeholder="Jane Doe" required>
         </label>
-          <label id="emailLabel" for="email">And Your Email?<br>
-            <input name="email" id="email" type="email" placeholder="somebody@example.com" required>
-          </label>
-          <p>What would you like to talk about?</p>
-          <textarea name="message" placeholder="Write your message here..."></textarea>
-          <button type="submit" class="submit" id="submit">Send</button>
+        <label id="emailLabel" for="email">And Your Email?<br>
+          <input name="email" id="email" type="email" placeholder="somebody@example.com" required>
+        </label>
+        <p>What would you like to talk about?</p>
+        <textarea name="message" placeholder="Write your message here..."></textarea>
+        <button type="submit" class="submit" id="submit">Send</button>
       </form>
-      </section>
-	</main>
-      <footer>
-        <div class="social-links" id="social-links">
-          <a class="social-link" href="https://github.com/janinewhitley" target="_blank"><i class="fab fa-github"></i></a>
-          <a class="social-link" href="https://behance.net/janinewhitley1" target="_blank"><i class="fab fa-behance"></i></a>
-        </div>
-      </footer>
-  </body>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links" id="social-links">
+      <a class="social-link" href="https://github.com/janinewhitley" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="social-link" href="https://behance.net/janinewhitley1" target="_blank"><i
+          class="fab fa-behance"></i></a>
+    </div>
+  </footer>
+</body>
+
 </html>
