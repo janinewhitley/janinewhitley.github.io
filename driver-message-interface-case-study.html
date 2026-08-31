@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Janine Whitley</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,60 +13,78 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="script.js" defer></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header" id="header">
-      <input type="checkbox" class="burger-toggle" id="burger-toggle" aria-hidden="true">
-       <label for="burger-toggle" class="burger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <input type="checkbox" class="burger-toggle" id="burger-toggle" aria-hidden="true">
+        <label for="burger-toggle" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </label>
-      <div class="logo" id="logo">
-        <a href="index.html"><img src="logo.png" alt="logo" style="height: 45px"></a>
-      </div>
-      <nav class="nav" id="nav">
-        <ul class="menu" id="menu">
-          <li><a href="index.html#work" class="link" onclick="closeHamburger()">Work</a></li>
-          <li><a href="index.html#about" class="link" onclick="closeHamburger()">About</a></li>
-          <li><a href="index.html#contact" class="link" onclick="closeHamburger()">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="logo" id="logo">
+            <a href="index.html"><img src="logo.png" alt="logo" style="height: 45px"></a>
+        </div>
+        <nav class="nav" id="nav">
+            <ul class="menu" id="menu">
+                <li><a href="#hero" class="link" onclick="closeHamburger()">Hero</a></li>
+                <li><a href="#problem" class="link" onclick="closeHamburger()">Problem</a></li>
+                <li><a href="#research" class="link" onclick="closeHamburger()">Research</a></li>
+                <li><a href="#ideation" class="link" onclick="closeHamburger()">Ideation</a></li>
+                <li><a href="#solution" class="link" onclick="closeHamburger()">Solution</a></li>
+                <li><a href="#impact" class="link" onclick="closeHamburger()">Impact</a></li>
+            </ul>
+        </nav>
     </header>
-      <main class="case-study-body">
+    <main class="case-study-body">
         <div class="case-study-header">
             <h1>Driver Message Interface Refresh</h1>
         </div>
-          <section class="case-studies">
-            <article class="case-study">
+        <section class="case-studies">
+            <article class="case-study" id="hero">
                 <div>
                     <h2>Hero</h2>
                     <img src="yard-move-exception-prototype.png" alt="prototype layout image">
                 </div>
                 <div class="case-study-description">
-                    <p>This is where I will explain steps.</p>
+                    <h3>What Is It?</h3>
+                        <p>A direct message interface redesign inspired by communication problems
+                            encountered by drivers while OTR. 
+                        </p>
+                    <h4>Role</h4>
+                        <p>UX Designer</p>
+                    <h4>Scope</h4>
+                        <p>Research, workflow design, interaction design, prototyping</p>
+                    <h4>Tools</h4>
+                        <p>Figma</p>
                 </div>
             </article>
-            <article class="case-study">
+            <article class="case-study" id="problem">
                 <div>
                     <h2>Problem</h2>
                     <img src="yard-exception-design.png" alt="prototype layout image">
                 </div>
                 <div class="case-study-description">
-                    <p>This is where I will explain steps.</p>
+                    <h3>What Could Be Improved?</h3>
+                    <p>Problems around message organization, urgency, identifying the sender
+                        and category of the message, load association, notifications, and 
+                        asynchronus communication.
+                    </p>
                 </div>
-            </article>            
-            <article class="case-study">
+            </article>
+            <article class="case-study" id="research">
                 <div>
                     <h2>Research</h2>
                     <img src="yard-move-exception-prototype.png" alt="prototype layout image">
                 </div>
                 <div class="case-study-description">
-                    <p>This is where I will explain steps.</p>
+                    <p>I began by mapping the existing structure of the direct messaging portion of the app.
+                        Both before and after opening a message.
+                    </p>
                 </div>
-            </article>            
-            <article class="case-study">
+            </article>
+            <article class="case-study" id="ideation">
                 <div>
                     <h2>Ideation</h2>
                     <img src="yard-exception-design.png" alt="prototype layout image">
@@ -74,7 +93,7 @@
                     <p>This is where I will explain steps.</p>
                 </div>
             </article>
-            <article class="case-study">
+            <article class="case-study" id="solution">
                 <div>
                     <h2>Solution</h2>
                     <img src="yard-move-exception-prototype.png" alt="prototype layout image">
@@ -83,7 +102,7 @@
                     <p>This is where I will explain steps.</p>
                 </div>
             </article>
-            <article class="case-study">
+            <article class="case-study" id="impact">
                 <div>
                     <h2>Impact</h2>
                     <img src="yard-exception-design.png" alt="prototype layout image">
@@ -93,6 +112,7 @@
                 </div>
             </article>
         </section>
-      </main>
-  </body>
+    </main>
+</body>
+
 </html>
