@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: clip;
+}
+
 .text {
     max-width: 100vw;
     display: flex;
