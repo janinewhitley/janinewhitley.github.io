@@ -220,7 +220,7 @@ a {
 }
 
 .case-study {
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
