@@ -29,4 +29,4 @@ transportation workflows.
 Clone the repository:
 
 ```bash
-git clone janinewhitley.github.io
+git clone janinewhitley/janinewhitley.github.io
