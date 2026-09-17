@@ -21,7 +21,7 @@ data structures & algorithms.
 A logistics and dispatch platform designed around real-world
 transportation workflows.
 
-**Technologies:** React, TypeScript, PostgreSQL, Docker, Kubernetes, AWS Lambda
+**Technologies:** React, TypeScript, Aurora PostgreSQL, Docker, Kubernetes, AWS Lambda
 
 
 ## Running Locally
