@@ -6,7 +6,7 @@ data structures & algorithms.
 
 ## Live Site
 
-[View Portfolio](https://janine whitley.github.io)
+[View Portfolio](https://janinewhitley.github.io)
 
 ## Tech Stack
 
