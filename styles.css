@@ -111,12 +111,12 @@ main {
     padding: 1rem;
 }
 
-ul {
+nav ul {
     list-style: none;
     height: 100%;
 }
 
-li {
+nav li {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,7 +125,7 @@ li {
     transition: 0.2s ease;
 }
 
-li:hover {
+nav li:hover {
     border-bottom: 2px solid white;
 }
 
@@ -144,7 +144,7 @@ a {
 
 .welcome {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +186,7 @@ a {
 .case-study-header {
     padding: 0 16rem;
     width: 25%;
-    height: 100vh !important;
+    height: 100dvh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,7 +220,7 @@ a {
 }
 
 .case-study {
-    height: 100vh;
+    height: 100dvh;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -234,6 +234,7 @@ a {
 
 .case-study img {
     width: 48rem; 
+    max-width: 100%;
     height: 24rem; 
     object-fit: cover;
     border-radius: 5px;
@@ -246,7 +247,7 @@ a {
 
 .case-study-description p {
     padding: .5rem 0;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.25rem, 1.125rem);
 }
 
 .work {
@@ -263,12 +264,14 @@ a {
     flex-direction: column;
     height: fit-content;
     background-color: #fff;
+    z-index: 2;
 }
 
 .project-name {
-    height: 100vh !important;
+    height: 100dvh !important;
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000;
@@ -276,17 +279,27 @@ a {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: -1;
+    z-index: 1;
+}
+
+.project-name a {
+    padding: .25rem;
+}
+
+.project-name a:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .project-name-text {
-    height: 100%;
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .project-description {
-    height: 100vh;
+    height: 100dvh;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -380,7 +393,7 @@ h5 {
 
 .contact {
     width: 100%;
-    height: 94vh;
+    height: 95dvh;
     color: white;
     background: linear-gradient(-45deg, blue, purple);
     display: flex;
@@ -479,7 +492,7 @@ footer {
     background-color: #16161D;
     position: absolute;
     width: 100%;
-    height: 6vh;
+    height: 5dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -507,7 +520,7 @@ footer {
         align-items: center;
         top: 77px;
         width: 100vw;
-        height: 50vh;
+        height: 50dvh;
         left: 0;
         position: absolute;
         z-index: 10;
@@ -579,8 +592,12 @@ footer {
         font-size: 1rem;
     }
 
+    .project-name-text div{
+        flex-direction: column;
+    }
+
     .about {
-        height: 100vh;
+        height: 100dvh;
 	overflow-y: scroll;
     }
     article {
@@ -640,7 +657,7 @@ footer {
 
     .project-name, .case-study-header {
         width: 100%;
-        height: 50vh
+        height: 50dvh
     }
 
     .case-study-header {

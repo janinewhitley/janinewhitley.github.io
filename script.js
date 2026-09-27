@@ -5,8 +5,8 @@ const closeHamburger = () => {document.getElementById('burger-toggle').checked =
           strings: [
             'UI/UX Design.', 
             'Web Development.',
-            'Computer Science.', 
-            'Network Engineering.', 
+            'Software Engineering.', 
+            'Network Architecture.', 
             'Cloud Computing.', 
             'Cybersecurity.',
     ],

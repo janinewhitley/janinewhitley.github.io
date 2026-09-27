@@ -69,7 +69,7 @@
                         trailer is already there. The current workflow does not provide a way to reconcile the physical
                         yard state with the system state while ppreserving the driver's original task. This creates a
                         mismatch between what the system expects and what the driver can actually do. I took on the
-                        responsibility of figuring out how we might allow the driver to correct the yard state and
+                        responsibility of implementing a feature that will allow the driver to correct the yard state and
                         continue the move with minimal interruption.
                     </p>
                 </div>
@@ -83,6 +83,9 @@
                     <p>I began by mapping the existing workflow and identifying the point where the system diverges
                         from the driver's real world experience.
                     </p>
+                    <br>
+                    <p><b>Move accepted → Verify trailer info → Get assigned slip → Arrive at slip → Slip occupied → Report a Problem → Location not updated</b></p>
+                    <br>
                 </div>
             </article>
             <article class="case-study" id="ideation">
@@ -109,7 +112,13 @@
                     <img src="yard-exception-design.png" alt="prototype layout image">
                 </div>
                 <div class="case-study-description">
-                    <p>This is where I will explain steps.</p>
+                    <p>This workflow takes a real operational problem and simplifies the solution.
+                    </p>
+                    <br>
+                    <p>The final product:</p>
+                    <ul>
+                        <li>Allows the driver to correct the discrepancy on the fly preventing issues further downstream.</li>
+                    </ul>
                 </div>
             </article>
         </section>

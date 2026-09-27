@@ -34,7 +34,7 @@
     </div>
     <nav class="nav" id="nav">
       <ul class="menu" id="menu">
-        <li><a href="#work" class="link" onclick="closeHamburger()">Work</a></li>
+        <li><a href="#project" class="link" onclick="closeHamburger()">Project</a></li>
         <li><a href="#about" class="link" onclick="closeHamburger()">About</a></li>
         <li><a href="#contact" class="link" onclick="closeHamburger()">Contact</a></li>
       </ul>
@@ -49,17 +49,23 @@
       </div>
       </div>
       <div class="down-arrow">
-        <a href="#work">
+        <a href="#project">
           <i class="fas fa-chevron-down" aria-hidden="true" style="color: #fff; text-shadow: #ddd 0 0 1px, #ccc 0 1.5px 3px, #bbb 0 3px 4px, #aaa 0 4px 1px, rgba(0, 0, 0, 0.2) 0 6px 3px, rgba(0, 0, 0, 0.1) 0 8px 4px, rgba(0, 0, 100, 0.2) 0 15px 80px"></i>
         </a>
       </div>
     </section>
-    <section class="work" id="work">
+    <section class="work" id="project">
       <div class="project-name" id="project-name">
-        <h2 class="project-name-text">My Work</h2>
+        <h2 class="project-name-text">Serverless Automated Dispatch Dashboard</h2>
+        <!-- <div style="padding: .5rem 0; color: rgba(255, 255, 255, 0.3)">
+          <a href="#cloud">Cloud Architecture</a> 
+          <a href="#dsa">Algorithms & Data Structures</a> 
+          <a href="#backend">Backend Systems</a>
+          <a href="#frontend">Frontend Engineering</a>
+        </div> -->
       </div>
       <div class="project">
-        <article class="project-description">
+        <!-- <article class="project-description">
           <h3>Yard Move Exception Workflow</h3>
           <p class="project-description-text">
             A process improvement design created in Figma, targeted at keeping physical and virtual yard state aligned
@@ -78,19 +84,90 @@
             <br>
             <a href="driver-message-interface-case-study.html" target="_blank">View Case Study ></a>
           </p>
-        </article>
-        <article class="project-description">
-          <h3>Serverless Dispatch/Resource Allocation System</h3>
+        </article> -->
+        <article class="project-description" id="cloud">
+          <h3>Cloud Architecture</h3>
           <p class="project-description-text">
             A serverless logistics simulation (an interface for managing high-volume, time-sensitive tasks) with
             event-driven resource assignment and real-time client updates, built using React and AWS architecture such as Lambda,
             API Gateway, DynamoDB, EventBridge, and Infrastructure as Code.
             <br>
             <br>
-            <a class="loading" target="_blank">In The Works</a>
+            <a href="cloud-architecture.html" target="_blank">View Technical Breakdown ></a>
+          </p>
+        </article>
+        <article class="project-description" id="dsa">
+          <h3>Algorithms & Data Structures</h3>
+          <p class="project-description-text">
+            Graph-based routing, priority scheduling, and efficient entity search.
+            <br>
+            <br>
+            <a href="dsa.html" target="_blank">View Technical Breakdown ></a>
+          </p>
+        </article>
+        <article class="project-description" id="backend">
+          <h3>Backend</h3>
+          <p class="project-description-text">
+            APIs and event-driven services coordinate drivers, loads, routes, and dispatch operations.
+            <br>
+            <br>
+            <a href="back-end.html" target="_blank">View Technical Breakdown ></a>
+          </p>
+        </article>
+        <article class="project-description" id="frontend">
+          <h3>Frontend</h3>
+          <p class="project-description-text">
+            A real-time operational interface for monitoring and managing dispatch activity.
+            <br>
+            <br>
+            <a href="front-end.html" target="_blank">View Technical Breakdown ></a>
+          </p>
+        </article>
+        <!-- <article class="project-description">
+          <h3>Homelab</h3>
+          <p class="project-description-text">
+            A serverless logistics simulation (an interface for managing high-volume, time-sensitive tasks) with
+            event-driven resource assignment and real-time client updates, built using React and AWS architecture such as Lambda,
+            API Gateway, DynamoDB, EventBridge, and Infrastructure as Code.
+            <br>
+            <br>
+            <a href="homelab.html" target="_blank">View Technical Breakdown ></a>
           </p>
         </article>
         <article class="project-description">
+          <h3>Networking</h3>
+          <p class="project-description-text">
+            A serverless logistics simulation (an interface for managing high-volume, time-sensitive tasks) with
+            event-driven resource assignment and real-time client updates, built using React and AWS architecture such as Lambda,
+            API Gateway, DynamoDB, EventBridge, and Infrastructure as Code.
+            <br>
+            <br>
+            <a href="networking.html" target="_blank">View Technical Breakdown ></a>
+          </p>
+        </article>
+        <article class="project-description">
+          <h3>Cybersecurity</h3>
+          <p class="project-description-text">
+            A serverless logistics simulation (an interface for managing high-volume, time-sensitive tasks) with
+            event-driven resource assignment and real-time client updates, built using React and AWS architecture such as Lambda,
+            API Gateway, DynamoDB, EventBridge, and Infrastructure as Code.
+            <br>
+            <br>
+            <a href="cyber.html" target="_blank">View Technical Breakdown ></a>
+          </p>
+        </article>
+        <article class="project-description">
+          <h3>UX Design</h3>
+          <h4>Yard Move Exception Workflow</h4>
+          <p class="project-description-text">
+            A process improvement design created in Figma, targeted at keeping physical and virtual yard state aligned
+            when assigned parking slips are unexpectedly occupied.
+            <br>
+            <br>
+            <a href="yard-move-exception-case-study.html" target="_blank">View Case Study ></a>
+          </p>
+        </article> -->
+        <!-- <article class="project-description">
           <h3>DOT-Clock Parking Router</h3>
           <p class="project-description-text">
             A routing system that continuously determines whether the driver can legally and realistically reach their
@@ -100,7 +177,7 @@
             <br>
             <a class="loading" target="_blank">In The Works</a>
           </p>
-        </article>
+        </article> -->
         <!-- <article class="project-description" style="background: linear-gradient(-45deg, #9a00ff, #00ff90);">
           <h3>Uncancelled</h3>
           <p class="project-description-text">
@@ -152,7 +229,7 @@
       <article class="credentials">
         <div class="title">
           <h2>Janine Whitley</h2>
-          <p>Full Stack Engineer</p>
+          <p>Software Engineer</p>
         </div>
         <address>
           <p>+1 (919) 802-2835</p>
@@ -163,12 +240,12 @@
       <br>
       <article class="experiences">
         <div class="title">
-          <h3>Relevant Experience</h3>
+          <h3>Experience</h3>
         </div>
         <div class="experience">
           <div class="work-resume">
             <div>
-              <h4>Truck Driver</h4>
+              <h4>Truck Driver/Operations Management</h4>
               <h5>Amazon</h5>
             </div>
             <div class="experience-description">
